@@ -1,4 +1,7 @@
 html,
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 body {
   margin: 0;
   padding: 0;
@@ -84,6 +87,7 @@ nav li {
   display: inline;
   text-align: center;
   flex: 1;
+  
 }
 nav a,
 nav span {
@@ -206,5 +210,99 @@ span {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: justify;
 }
+<style>
+      .dashboard-order{
+        width: 500px;
+        min-height: 100%;
+        position: fixed;
+        top:0;
+        text-align: center;
+        padding-left: 30%;
+        background-color: var(--mainColor);
+        z-index: 3;
+        text-transform: uppercase;
+       
+      }
+      .dashboard-order > h1{
+        color: blue;
+      }
+      .order-address > h3{
+        line-height: 2px;
+        text-transform: uppercase;
+        color: crimson;
+      }
+      .order-wrapper{
+        height: 180px;
+        width: 100%;
+        overflow-y: scroll;
+        margin: 20px 0px;
+
+      }
+      .order-wrapper::-webkit-scrollbar{
+        width: 7px;
+      }
+      .order-wrapper::-webkit-scrollbar-track{
+        background-color: lightslategray;
+        border-radius: 20px 0px;
+      }
+      .order-wrapper::-webkit-scrollbar-thumb{
+        background-color: darkslategray;
+        border-radius: 20px;
+
+      }
+      .order-card{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr 0.5fr;
+        padding: 10px 0;
+        gap: 5px;
+        justify-content: space-around;
+        align-items: flex-start;
+
+      }
+      .order-image{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      .order-detail > input {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+        background-color: transparent;
+        margin-left: 10px;
+      }
+      hr.divider {
+        width: 100%;
+        border: 1px dashed darkgrey;
+
+      }
+      .order-total > p{
+        padding: 5px 0%;
+
+      }
+      .order-total >p>span{
+        padding-right: 8%;
+        float:right;
+        font-weight: 600px;
+      }
+      .checkout {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        background-color: red;
+        border: none;
+        border-radius: 20px;
+        color:lightgrey;
+        cursor: pointer;
+      }
+      .checkout:hover {
+        font-weight: 600px;
+      }  
+
+     </style>
+     </head>
 </body>
 </html>
